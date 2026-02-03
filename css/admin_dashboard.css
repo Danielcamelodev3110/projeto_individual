@@ -1,0 +1,99 @@
+  /* ============================
+   LAYOUT PRINCIPAL DO PAINEL
+   ============================ */
+  
+  .admin-layout {
+      display: flex;
+      min-height: calc(100vh - 80px);
+  }
+  /* ============================
+   MENU LATERAL (SIDEBAR)
+   ============================ */
+  
+  .admin-sidebar {
+      width: 260px;
+      background-color: rgb(131, 41, 41);
+      color: white;
+      padding: 20px 0;
+  }
+  
+  .admin-sidebar h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 1.5rem;
+  }
+  
+  .admin-sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  }
+  
+  .admin-sidebar ul li a {
+      display: block;
+      padding: 12px 20px;
+      font-size: 1.1rem;
+      color: white;
+      text-decoration: none;
+      border-left: 4px solid transparent;
+      transition: 0.3s;
+  }
+  
+  .admin-sidebar ul li a:hover,
+  .admin-sidebar ul li.active a {
+      background-color: rgb(102, 29, 29);
+      border-left: 4px solid #ffe066;
+  }
+  /* ============================
+   ÁREA PRINCIPAL DO ADMIN
+   ============================ */
+  
+  .admin-content {
+      flex-grow: 1;
+      padding: 30px;
+  }
+  
+  .welcome-box {
+      background-color: #f1f1f1;
+      padding: 18px;
+      border-radius: 8px;
+      margin-bottom: 25px;
+  }
+  
+  .welcome-box h2 {
+      margin: 0;
+      color: rgb(131, 41, 41);
+  }
+  /* ============================
+   HEADER SUPERIOR
+   ============================ */
+  
+  .navbar {
+      background-color: rgb(131, 41, 41);
+      padding: 1rem 0;
+  }
+  
+  .navbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .logo {
+      font-size: 1.7rem;
+      font-weight: bold;
+      color: white;
+  }
+  
+  .logout-btn {
+      background-color: #c0392b;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+  }
+  
+  .logout-btn:hover {
+      background-color: #e74c3c;
+  }

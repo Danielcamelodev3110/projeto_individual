@@ -1,0 +1,224 @@
+/* ======== ESTILO GLOBAL ========= */
+
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(189, 153, 153);
+}
+
+h1 {
+    color: #ffffff;
+    margin: 10px;
+}
+
+#primeiro {
+    color: #ffffff;
+    margin: 10px;
+}
+
+
+/* ======= CABEÇALHO E MENU ======= */
+
+.container {
+    background-color: #661d1d;
+    border-bottom: 1px solid #c9c3b4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.main-header {
+    background-color: #e6e0d3;
+    border-bottom: 1px solid #c9c3b4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+
+
+/* ======= NAV ORIGINAL (mantida da primeira programação) ======= */
+
+.nav-bar {
+    flex-grow: 1;
+}
+
+.nav-bar li {
+    list-style: none;
+    display: inline;
+    align-items: center;
+    gap: 5px;
+    margin: 10px;
+}
+
+.nav-bar li a {
+    text-decoration: none;
+    color: #661d1d;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 5px;
+    padding: 5px 0px;
+    transition: color 0.1s;
+}
+
+.nav-bar li a:hover {
+    color: #300e0e;
+    cursor: pointer;
+}
+
+
+/* ======== CARRINHO ========= */
+
+.carrinho-container {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 2rem;
+    border-radius: 15px;
+    background-color: #9c121295;
+    box-shadow: 0px 0px 10px black;
+    color: white;
+}
+
+.carrinho-tabela {
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #333;
+    border-collapse: collapse;
+}
+
+.carrinho-tabela th {
+    background: #e6e0d3;
+    color: black;
+    padding: 15px;
+}
+
+.carrinho-tabela td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.carrinho-tabela img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+
+/* Remover item */
+
+.remover-item {
+    background: rgb(131, 41, 41);
+    color: white;
+    padding: 7px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.remover-item:hover {
+    background: rgb(102, 29, 29);
+}
+
+
+/* Resumo */
+
+.carrinho-resumo {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.resumo-box {
+    width: 360px;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid rgb(131, 41, 41);
+}
+
+.resumo-box h3 {
+    text-align: center;
+    color: rgb(131, 41, 41);
+}
+
+
+/* Botão Finalizar – ARRUMADO */
+
+.checkout-btn {
+    display: block;
+    width: 300px;
+    padding: 1rem;
+    margin-top: 1.3rem;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background: rgb(131, 41, 41);
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-left: 15px;
+}
+
+.checkout-btn:hover {
+    background: rgb(102, 29, 29);
+}
+
+
+/* ======== FOOTER ========= */
+
+footer {
+    background-color: #661d1d;
+    padding: 40px 20px;
+    margin-top: 60px;
+    border-top: 5px solid #c9c3b4;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+footer h3 {
+    color: #ffffff;
+}
+
+footer p {
+    color: #ffffff;
+}
+
+.footerimg img {
+    width: 30px;
+    padding-left: 10px;
+}
+
+.espacoaolado,
+.esquerda {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ======= RESPONSIVIDADE ======= */
+
+@media (max-width: 768px) {
+    .slider {
+        height: 60vw;
+    }
+    .navigation-manual,
+    .navigation-auto {
+        bottom: 10px;
+    }
+    .botoes-datas button {
+        width: 150px;
+        height: 100px;
+        margin: 10px;
+    }
+    footer {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}

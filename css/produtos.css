@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(189, 153, 153);
+}
+    
+    h1 {
+        color: #ffffff;
+        margin: 10px;
+    }
+    
+    #primeiro {
+        color: #ffffff;
+        margin: 10px;
+    }
+    /* ======= CABEÇALHO E MENU ======= */
+    
+    .container {
+        background-color: #661d1d;
+        border-bottom: 1px solid #c9c3b4;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;
+    }
+    
+    .main-header {
+        background-color: #e6e0d3;
+        border-bottom: 1px solid #c9c3b4;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+    }
+    /* ======= NAV ORIGINAL (mantida da primeira programação) ======= */
+    
+    .nav-bar {
+        flex-grow: 1;
+    }
+    
+    .nav-bar li {
+        list-style: none;
+        display: inline;
+        align-items: center;
+        gap: 5px;
+        margin: 10px;
+    }
+    
+    .nav-bar li a {
+        text-decoration: none;
+        color: #661d1d;
+        font-weight: bold;
+        font-size: 14px;
+        letter-spacing: 5px;
+        padding: 5px 0px;
+        transition: color 0.1s;
+    }
+    
+    .nav-bar li a:hover {
+        color: #300e0e;
+        cursor: pointer;
+    }
+.title {
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    background-color: #a57575;
+    margin-top: 2rem;
+    color: #300e0e;
+}
+
+.title h3 {
+    margin-top: -25px;
+}
+
+
+#primeiro {
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+#preco {
+    font-size: 18px;
+    color: #d64040;
+    font-weight: bold;
+}
+
+.container {
+    background-color: #661d1d;
+    border-bottom: 1px solid #c9c3b4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.main-header {
+    background-color: #e6e0d3;
+    border-bottom: 1px solid #c9c3b4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.nav-bar {
+    flex-grow: 1;
+}
+
+.nav-bar li {
+    list-style: none;
+    display: inline;
+    align-items: center;
+    gap: 5px;
+    margin: 10px;
+}
+
+.nav-bar li a {
+    text-decoration: none;
+    color: #661d1d;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 5px;
+    padding: 5px 0px;
+    transition: color 0.1s;
+}
+
+.nav-bar li a:hover {
+    color: #300e0e;
+    cursor: pointer;
+}
+
+
+/* ======== PRODUTO CARD ======== */
+
+.produto {
+    background-color: #e6e0d3;
+    width: 220px;
+    /* um pouco maior para melhor proporção */
+    border: 5px solid rgb(202, 185, 185);
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(92, 54, 54, 0.9);
+    padding: 1rem 1.5rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.produto img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    margin: 0 auto 15px auto;
+    border-radius: 10px;
+}
+
+.produto h3 {
+    font-size: 18px;
+    color: #300e0e;
+    margin: 10px 0;
+}
+
+.produto p {
+    font-size: 16px;
+    color: #d64040;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.produto button {
+    background-color: #661d1d;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 13px;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.produto button:hover {
+    background-color: #300e0e;
+    cursor: pointer;
+}
+
+.produto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ======== MAIN / GRID ======== */
+
+main {
+    padding-top: 2rem;
+}
+
+main h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.organiza {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /* mais flexível */
+    gap: 40px;
+    /* espaçamento uniforme entre cards */
+    justify-items: center;
+    /* centraliza os cards dentro da grid */
+    align-items: start;
+    padding: 20px 0;
+}
+
+footer {
+    background-color: #661d1d;
+    padding: 40px;
+    margin-top: 110px;
+    border-top: 5px solid #c9c3b4;
+    display: flex;
+    justify-content: space-between;
+    /* divide em esquerda e direita */
+}
+
+footer h3 {
+    color: #ffffff;
+}
+
+footer p {
+    color: #ffffff
+}
+
+footer img {
+    color: #ffffff
+}
+
+.footerimg img {
+    width: 30px;
+    padding-left: 10px;
+}
+
+.espacoaolado,
+.esquerda {
+    display: flex;
+    flex-direction: column;
+}
