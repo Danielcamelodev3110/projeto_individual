@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desesperados.com </title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1> Desesperados.com </h1>
+        <br>
+        <p id="primeiro"> Para pessoas esquecidas que não lembraram de comprar presente para alguem especial em virtude da vida corrida. </p>
+    </div>
+    <header class="main-header">
+        <nav>
+            <ul class="nav-bar">
+                <li> <a href="index.html">Home </a> </li>
+                <li><a href="sobre.html"> Sobre</a></li>
+                <li><a href="produtos.html">Produtos</a> </li>
+                <li><a href="carrinho.php"> Carrinho </a></li>
+                <li><a href="login.php"> Entrar</a> </li>
+                <li><a href="logout.php"> Sair </a> </li>
+            </ul>
+        </nav>
+    </header>
+    <br> <br>
+    <div class="slider">
+
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">
+
+            <div class="slide first">
+                <img src="img/kit_presente_dia_das_maes_agua_termal_argila_sabonete_4145_1_26fa3f42ce91832aee5dc25cf067e84e.webp" alt="Imagem 1">
+            </div>
+            <div class="slide">
+                <img src="img/81246qtcRpL.jpg" alt="Imagem 2">
+            </div>
+            <div class="slide">
+                <img src="img/brigadhelo26.webp" alt="Imagem 3">
+            </div>
+            <div class="slide">
+                <img src="img/colar_mae_personalizado_693_1_d22bd75f42abe1b839353debe9f0adb3.webp" alt="Imagem 4">
+            </div>
+            <div class="slide">
+                <img src="img/images (2).jpg" alt="Tela">
+            </div>
+
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+            </div>
+
+        </div>
+
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function() {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 5) {
+                counter = 1;
+            }
+        }, 5000);
+    </script>
+    <br> <br>
+    <div class="botoes-datas">
+        <button> Dia das mães </button>
+        <button>Dia dos pais </button>
+        <button> Dia das crianças </button>
+        <button> Dia dos namorados </button>
+        <button> Natal </button>
+    </div>
+    <footer>
+        <div class="esquerda">
+            <h3>Desesperados.com </h3>
+            <p> Conheça mais do nosso trabalho: </p>
+            <div class="footerimg">
+                <img src="img/instagram.png" alt="instagram">
+                <img src="img/facebook.png" alt="facebook">
+                <img src="img/tiktok.png" alt="facebook">
+            </div>
+        </div>
+        <div class="espacoaolado">
+            <h3> Contato: </h3>
+            <p>Telefone para contato: (99) 9999-9999 </p>
+            <p> Email para contato: desesperados@gmail.com</p>
+        </div>
+    </footer>
+</body>
+
+</html>
